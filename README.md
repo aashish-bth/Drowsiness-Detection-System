@@ -1,7 +1,7 @@
 # Drowsiness-Detection-System
 This type of system mainly implemented for drivers to reduce or avoid road accidents.
 
-# Major frameworks and library used:
+# Major framework and libraries used:
 Drowsiness detection with Python3.6, OpenCV and Dlib library.
 
 # Run:
@@ -9,11 +9,11 @@ If you want to run this project:
 
 You required a shape predictor file 'shape_predictor_68_face_landmarks.dat'. You can google it and download this file. 
 
-Then open the terminal and run below command.
+Then open the terminal/cmd and run below command.
 
     python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat
     
-    or,
+or, if you wish to play an alert then run below command.
     
     python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav
     
@@ -31,3 +31,4 @@ Message recieved from server
 
 ![Output-4](assets/4.jpg?raw=true "E-mail")
 E-mail recieved from server
+
