@@ -8,7 +8,6 @@ import playsound
 import argparse
 import dlib
 import cv2
-import heapq
 
 def sound_alarm(path):
 	playsound.playsound(path)
