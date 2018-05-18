@@ -13,7 +13,7 @@ Then open the terminal/cmd and run below command.
 
     python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat
     
-or, if you wish to play an alert then run below command.
+Or, if you wish to play an alert sound then run below command.
     
     python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav
     
@@ -23,7 +23,14 @@ Real Time Video Streaming
 ![Output-2](assets/2.png?raw=true "Real Time Video Streaming with Alert Message")
 Real Time Video Streaming with Alert Message
 
-    python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav --sms +91********** --mail example@abc.com
+
+If you wish to send sms only then run below command (mobile must must be listed in host's twilio account).
+
+    python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav --sms +91**********
+    
+Or, if you wish to send e-mail only then run below command.
+
+    python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav --mail example@abc.com
 
 ![Output-3](assets/3.jpg?raw=true "Message")
 
@@ -31,4 +38,8 @@ Message recieved from server
 
 ![Output-4](assets/4.jpg?raw=true "E-mail")
 E-mail recieved from server
+
+If you wish to send both sms and e-mail then run below command.
+
+    python detect_drowsiness_V3.py --shape-predictor shape_predictor_68_face_landmarks.dat --alarm alarm.wav --sms +91********** --mail example@abc.com
 
